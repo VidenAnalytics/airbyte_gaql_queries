@@ -1,0 +1,26 @@
+SELECT
+  segments.date,
+  segments.device,
+  geographic_view.country_criterion_id,
+  geographic_view.resource_name,
+  geographic_view.location_type,
+  segments.ad_network_type,
+  segments.geo_target_city,
+  segments.geo_target_region,
+  campaign.resource_name,
+  campaign.name,
+  campaign.id,
+  campaign.advertising_channel_type,
+  campaign.advertising_channel_sub_type,
+  metrics.conversions_value,
+  metrics.conversions,
+  metrics.all_conversions_value,
+  metrics.all_conversions,
+  metrics.clicks,
+  metrics.cost_micros,
+  metrics.impressions,
+  metrics.interactions,
+  metrics.view_through_conversions,
+  metrics.video_views
+FROM
+  geographic_view
