@@ -1,0 +1,26 @@
+SELECT
+  segments.date,
+  segments.device,
+  segments.conversion_action,
+  segments.conversion_action_category,
+  segments.conversion_action_name,
+  campaign.resource_name,
+  campaign.name,
+  campaign.id,
+  campaign.advertising_channel_type,
+  campaign.advertising_channel_sub_type,
+  segments.ad_network_type,
+  metrics.orders,
+  metrics.revenue_micros,
+  metrics.units_sold,
+  metrics.conversions_value,
+  metrics.conversions,
+  metrics.all_conversions_value,
+  metrics.all_conversions,
+  metrics.conversions_value_by_conversion_date,
+  metrics.conversions_by_conversion_date,
+  metrics.all_conversions_value_by_conversion_date,
+  metrics.all_conversions_by_conversion_date,
+  metrics.view_through_conversions
+FROM
+  campaign
