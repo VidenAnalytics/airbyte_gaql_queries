@@ -32,7 +32,6 @@ SELECT
   metrics.video_quartile_p25_rate,
   metrics.video_quartile_p50_rate,
   metrics.video_quartile_p75_rate,
-  metrics.video_quartile_p75_rate,
   metrics.video_quartile_p100_rate
 FROM
   campaign

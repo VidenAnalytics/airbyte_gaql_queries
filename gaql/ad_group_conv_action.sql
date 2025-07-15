@@ -1,18 +1,18 @@
 SELECT
-  segments.date,
-  segments.device,
-  segments.conversion_action,
+  segments.date, -- PK
+  segments.device, -- PK
+  segments.conversion_action, -- PK
   segments.conversion_action_category,
   segments.conversion_action_name,
   campaign.name,
   campaign.id,
-  campaign.advertising_channel_type,
-  campaign.advertising_channel_sub_type,
-  ad_group.resource_name,
+  campaign.advertising_channel_type, -- PK
+  campaign.advertising_channel_sub_type, -- PK
+  ad_group.resource_name, -- PK
   ad_group.name,
   ad_group.id,
   ad_group.type,
-  segments.ad_network_type,
+  segments.ad_network_type, -- PK
   metrics.orders,
   metrics.revenue_micros,
   metrics.units_sold,
