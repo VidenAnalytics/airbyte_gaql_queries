@@ -1,0 +1,22 @@
+SELECT
+  segments.date,
+  segments.device,
+  segments.ad_network_type,
+  segments.conversion_action,
+  segments.conversion_action_category,
+  segments.conversion_action_name,
+  campaign.id,
+  campaign.name,
+  campaign.advertising_channel_type,
+  campaign.advertising_channel_sub_type,
+  ad_group.id,
+  ad_group.name,
+  ad_group.type,
+  ad_group_ad.ad.id,
+  ad_group_ad.ad.name,
+  ad_group_ad.status,
+  ad_group_ad.ad.resource_name,
+  metrics.conversions,
+  metrics.conversions_value
+FROM
+  ad_group_ad
