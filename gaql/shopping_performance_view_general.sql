@@ -1,7 +1,6 @@
 SELECT
   shopping_performance_view.resource_name,
   segments.date,
-  segments.device,
   segments.product_brand,
   segments.product_channel,
   segments.product_country,
